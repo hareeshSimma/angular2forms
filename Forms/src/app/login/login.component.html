@@ -1,0 +1,27 @@
+
+<div class="container">
+	<section id="content">
+		<form >
+			<h1>Login Form</h1>
+			<div>
+				<input type="text" [(ngModel)]='Uname' placeholder="Username" required="" name="username"  id="username"/>
+			</div>
+			<div>
+				<input type="password" [(ngModel)]='pswd' placeholder="Password" required="" name="password" id="password" />
+			</div>
+			<div>
+				<input type="submit" value="Log in" (click)="clickName()" />
+				<!-- <a href="#">Lost your password?</a> -->
+				<a routerLink="/Register">Register</a>
+			</div>
+
+		</form><!-- form -->
+
+
+
+	</section><!-- content -->
+  <!-- <span>
+{{Uname}} <br>
+{{pswd}}
+</span> -->
+</div><!-- container -->
